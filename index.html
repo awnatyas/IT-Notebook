@@ -18,36 +18,98 @@
 
         <!-- MENU UTAMA -->
 
-        <section id="home" class="grid">
+        <section id="home">
 
-            <div class="card" onclick="openNote('python')">
+            <div class="subject">
+
                 <h2>🐍 Python</h2>
-                <p>Syntax, OOP, Project</p>
+
+                <div class="sub-grid">
+
+                    <div class="sub-card" onclick="openNote('python-syntax')">
+                        Dasar Syntax
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('python-function')">
+                        Function
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('python-oop')">
+                        OOP
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('python-file')">
+                        File Handling
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('python-project')">
+                        Project
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="card" onclick="openNote('git')">
+
+            <div class="subject">
+
                 <h2>🌳 Git</h2>
-                <p>Version Control</p>
+
+                <div class="sub-grid">
+
+                    <div class="sub-card" onclick="openNote('git-basic')">
+                        Basic Command
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('git-branch')">
+                        Branch
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('git-merge')">
+                        Merge
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('git-github')">
+                        GitHub
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('git-project')">
+                        Project
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="card" onclick="openNote('sql')">
+
+            <div class="subject">
+
                 <h2>🗄 SQL</h2>
-                <p>Database & Query</p>
-            </div>
 
-            <div class="card" onclick="openNote('html')">
-                <h2>🌐 HTML</h2>
-                <p>Web Structure</p>
-            </div>
+                <div class="sub-grid">
 
-            <div class="card" onclick="openNote('css')">
-                <h2>🎨 CSS</h2>
-                <p>Styling</p>
-            </div>
+                    <div class="sub-card" onclick="openNote('sql-select')">
+                        SELECT
+                    </div>
 
-            <div class="card" onclick="openNote('javascript')">
-                <h2>⚡ JavaScript</h2>
-                <p>Web Logic</p>
+                    <div class="sub-card" onclick="openNote('sql-where')">
+                        WHERE
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('sql-join')">
+                        JOIN
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('sql-table')">
+                        Table
+                    </div>
+
+                    <div class="sub-card" onclick="openNote('sql-project')">
+                        Project
+                    </div>
+
+                </div>
+
             </div>
 
         </section>

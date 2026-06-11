@@ -4,18 +4,24 @@ function openNote(topic){
 
     currentTopic = topic;
 
-    document.getElementById("home").style.display = "none";
+    document.getElementById("home").style.display =
+        "none";
 
-    document.getElementById("notePage").classList.remove("hidden");
+    document.getElementById("notePage")
+        .classList.remove("hidden");
 
-    document.getElementById("noteTitle").innerText =
-        topic.toUpperCase();
+    let title = topic
+        .replaceAll("-", " ")
+        .toUpperCase();
+
+    document.getElementById("noteTitle")
+        .innerText = title;
 
     let savedNote =
         localStorage.getItem(topic);
 
-    document.getElementById("noteContent").value =
-        savedNote || "";
+    document.getElementById("noteContent")
+        .value = savedNote || "";
 }
 
 function goBack(){
