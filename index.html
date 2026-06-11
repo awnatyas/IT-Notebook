@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel IT Notebook</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Pixel IT Notebook</h1>
+        <p>Journey Menjadi Developer</p>
+    </header>
+
+    <main>
+
+        <!-- MENU UTAMA -->
+
+        <section id="home" class="grid">
+
+            <div class="card" onclick="openNote('python')">
+                <h2>🐍 Python</h2>
+                <p>Syntax, OOP, Project</p>
+            </div>
+
+            <div class="card" onclick="openNote('git')">
+                <h2>🌳 Git</h2>
+                <p>Version Control</p>
+            </div>
+
+            <div class="card" onclick="openNote('sql')">
+                <h2>🗄 SQL</h2>
+                <p>Database & Query</p>
+            </div>
+
+            <div class="card" onclick="openNote('html')">
+                <h2>🌐 HTML</h2>
+                <p>Web Structure</p>
+            </div>
+
+            <div class="card" onclick="openNote('css')">
+                <h2>🎨 CSS</h2>
+                <p>Styling</p>
+            </div>
+
+            <div class="card" onclick="openNote('javascript')">
+                <h2>⚡ JavaScript</h2>
+                <p>Web Logic</p>
+            </div>
+
+        </section>
+
+        <!-- HALAMAN NOTE -->
+
+        <section id="notePage" class="hidden">
+
+            <button onclick="goBack()">⬅ Kembali</button>
+
+            <h2 id="noteTitle"></h2>
+
+            <textarea
+                id="noteContent"
+                placeholder="Tulis catatanmu di sini..."
+            ></textarea>
+
+            <button onclick="saveNote()">
+                💾 Simpan Catatan
+            </button>
+
+        </section>
+
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
